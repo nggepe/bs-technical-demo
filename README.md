@@ -8,8 +8,8 @@
 # Assumption
 
 1. The data fetching is using throttle `1 second` to make sure you can see the loading state.
-2. The table is using client-side pagination. The default page size is 10. You can change the previous page only if the current page is not the first page. You can change the next page only if the current page is not the last page. I implement this condition to avoid the user to go to the non-existent page.
-3. The table is using client-side sorting. You can click the table header to sort the products, click again to toggle the sort direction, and click the table header again to remove the sort.
+2. The table is using client-side pagination (fetch api or server action simulation). The default page size is 10. You can change the previous page only if the current page is not the first page. You can change the next page only if the current page is not the last page. I implement this condition to avoid the user to go to the non-existent page.
+3. The table is using client-side sorting (fetch api or server action simulation). You can click the table header to sort the products, click again to toggle the sort direction, and click the table header again to remove the sort.
 4. The functionality of the app is using search params to filter, search, sort, and paginate the list views. So you can still see the filter or even the search condition even you refresh the page. Also you can share the current state of the app using url.
 5. The unit test is build using vitest. Because vitest is fast and easy to use.
 6. You can run the unit test using `npm run test`
